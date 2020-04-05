@@ -54,7 +54,7 @@ pipeline {
         stage ('Functional Test') {
             steps {
                 dir('functional-test') {
-                    git credentialsId: 'Github_Login', url: 'hhttps://github.com/ffvechio/tasks-functional-test'
+                    git credentialsId: 'Github_Login', url: 'https://github.com/ffvechio/tasks-functional-test'
                     sh 'mvn test'
                 }
             }
