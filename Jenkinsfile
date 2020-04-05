@@ -42,7 +42,7 @@ pipeline {
                 }
             }
         }
-         stage ('Deploy Backend') {
+         stage ('Deploy Frontend') {
             steps {
                 dir('frontend') { 
                     git credentialsId: 'Github_Login', url: 'https://github.com/ffvechio/tasks-frontend'
